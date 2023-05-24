@@ -1,0 +1,495 @@
+/*The color of text of the body*/
+body
+{
+    color: #585858;
+}
+
+/*headers with class "space" have space between thier letters and bold text*/
+.space
+{
+    letter-spacing: 6px;
+    font-weight: 800;
+}
+
+/*The general style of all buttons in the body while focusing*/
+button:focus
+{
+    outline: none;
+}
+
+/*navbar style*/
+/*The button with id "open" which open the side menu*/
+#open
+{
+    position: fixed;
+    top: 0;
+    right: 20px;
+    font-size: 40px;
+    background-color: inherit;
+    border: none;
+    z-index: 4;
+}
+
+/*The button with id "close" which close the side menu*/
+#close
+{
+    position: fixed;
+    top:10px;
+    right:360px;
+    font-size: 25px;
+    display: none;
+    z-index: 3;
+    background-color: inherit;
+    border: none;
+}
+
+/*The style of the two buttons in the navbar while hovering*/
+nav button:hover
+{
+    color: #f2849e;
+}
+
+/*The style of the side nav menu*/
+.sideMenu
+{
+    background-color: #585858;
+    height:100%;
+    position: fixed;
+    top:0;
+    right: 0;
+    padding: 0 15px;
+    display: none;
+    z-index: 3;
+    color: white;
+}
+
+/*The style of the word "MENU" in the side menu*/
+nav h6
+{
+    color: white;
+    padding: 50px 50px 30px 50px;
+}
+
+/*The style of the list which contains the links of the site*/
+nav li
+{
+    list-style-type: none;
+    padding: 15px 120px 15px 15px;
+    margin-right: 30px;
+}
+
+/*the style of the middle links*/
+.middle
+{
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/*The style of the links in the side nav*/
+nav a
+{
+    color: white;
+}
+
+/*The style of the links in the side nav while hovering*/
+nav a:hover
+{
+    color: #f2849e;
+    text-decoration: none;
+}
+
+/*The overlay div which decrease the opacity of the page when the side nav is open*/
+.overlay
+{
+    opacity: 0.25;
+    z-index: 2;
+}
+/*End of navbar style*/
+
+/*Header style*/
+header
+{
+    padding: 50px 20px;
+}
+
+/*The style of the logo image in the header*/
+header img
+{
+    width: 30px;
+}
+
+/*The style of the "PHANTOM" site name in the header*/
+header>a
+{
+    color: #585858;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+/*The style of all links in the header while hovering*/
+header a:hover
+{
+    color: #f2849e; 
+    text-decoration: none;
+    border:none;
+}
+
+/*The style of h1 heading*/
+h1
+{
+    font-size: 30px;
+    font-weight: 750;
+    padding: 50px 0;
+}
+
+/*The style of the link in the h1 heading*/
+h1 a
+{
+    color: #585858;
+    text-decoration: none;
+    border-bottom: 0.5px dotted #585858;
+}
+/*End of header style*/
+
+/*Secction Style*/
+/*The style of the div with class "picture" which contains the 12 images in it*/
+section .picture
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-left: 50px;
+}
+
+/*The style of the 12 divs of the 12 images*/
+.images
+{
+    transition: transform .2s;
+    align-content: space-between;
+    margin: 20px 0;
+}
+
+/*The style of the 12 divs of the 12 images while hovering*/
+.images:hover
+{
+    transform: scale(1.1);
+    transition: .3s ease;
+}
+
+/*The style of the 12 images*/
+.images img
+{
+    position: relative;
+    width:90%;
+    height: auto;
+    z-index: 1;
+    top: 0;
+    left: 5%;
+    right: 0;
+    bottom: 0;
+    border-radius: 5px;
+}
+
+/*The style of the overlay div which appear over the images*/
+.text
+{
+    position: absolute;
+    width: 84%;
+    height: 100%;
+    top: 0;
+    left: 8%;
+    right: 0;
+    bottom: 0;
+    text-align: center; 
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 1;
+    border-radius: 5px;
+}
+
+/*The style of the overlay div while hovering*/
+.text:hover
+{
+    background: none;
+}
+
+/*The color of the overlay div for the 12 images*/
+.img1
+{
+    background-color: #f2849e;
+    opacity: 0.8;
+    z-index: 2;
+}
+
+.img2
+{
+    background-color: #7ecaf6;
+    opacity: 0.8;
+    z-index: 2;
+}
+
+.img3
+{
+    background-color: #7bd0c1;
+    opacity: 0.8;
+    z-index: 2;
+}
+
+.img4
+{
+    background-color: #c75b9b;
+    opacity: 0.8;
+    z-index: 2;
+}
+
+.img5
+{
+    background-color: #ae85ca;
+    opacity: 0.8;
+    z-index: 2;
+}
+
+.img6
+{
+    background-color: #8499e7;
+    opacity: 0.8;
+    z-index: 2;
+}
+
+/*The style of the links in the section while hovering*/
+section a:hover
+{
+    text-decoration: none;
+}
+
+/*The style of the paragraph which is hidden normally*/
+.text p
+{
+    display: none;
+}
+
+/*The style of the paragraph which is shown while hovering*/
+.text:hover> p
+{
+    display: block;
+}
+/*End of section style*/
+
+/*Footer style*/
+footer
+{
+    background-color: #f6f6f6;
+    padding-top: 50px;
+}
+
+/*The general style of both input and textarea*/
+input, textarea
+{
+    border: none;
+    border-bottom: 1px solid #585858;
+    background-color: #f6f6f6;
+    margin: 15px 0;
+    width: 100%;
+    resize: none;
+}
+
+/*The style of both input and textarea while focusing*/
+input:focus, textarea:focus
+{
+    border-bottom: 1px solid #ee5f81;
+    outline: none;
+}
+
+/*The style of the "send" button in the form*/
+form button
+{
+    background-color: #585858;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/*The style of the "send" button in the form while hovering*/
+form button:hover
+{
+    background-color: #f2849e;
+}
+
+/*The style of the "send" button in the form while its active*/
+form button:active
+{
+    background-color: #ee5f81;
+}
+
+/*The style of h5 heading*/
+#social h5
+{
+    margin-left: 10px;
+}
+
+/*The style of the social media links*/
+#social a
+{
+    text-decoration: none;
+    color: #585858;
+    border: 0.5px solid #585858;
+    border-radius: 5px;
+    padding: 12.5px;
+    font-size: 20px;
+    margin: 10px;
+}
+
+/*The style of the social media links while hovering*/
+#social a:hover
+{
+    color: #ee5f81;
+    border: 0.5px solid #ee5f81;
+}
+
+/*The style of the list in the footer*/
+footer ul
+{
+    padding: 50px 0;
+    text-align: center;
+}
+
+/*The style of the list elements in the footer*/
+footer li
+{
+    list-style: none;
+    font-size: 12px;
+}
+
+/*The style of the links in the footer list*/
+footer li a
+{
+    color: #585858;
+    text-decoration: none;
+    border-bottom: 0.5px dotted #585858;
+}
+
+/*The style of the links in the footer list while hovering*/
+footer li a:hover
+{
+    color: #f2849e; 
+    text-decoration: none;
+    border:none;
+}
+/*End of footer style*/
+
+/*The style of the body with width between "575px" and "600px"*/
+@media(min-width:575px)
+{
+    .images img
+    {
+        width: 100%;
+        left: 0;
+    }
+    
+    /*The style of the overlay div which appears over the image */
+    .text
+    {
+        width: 90%;
+        left: 5%;
+    }
+}
+/*End of "575px" width*/
+
+/*The style of the body with width between "600px" and "768px"*/
+@media(min-width:600px)
+{
+    /*The style of h1 headings*/
+    h1
+    {
+        font-size: 40px;
+    }
+    
+    /*Footer style*/
+    footer .container
+    {
+        display: flex;
+    }
+    
+    /*The style of the div with class "row" to reverse the divs*/
+    footer .row
+    {
+        flex-direction: row-reverse;
+    }
+    
+    /*The style of the inner div in the form*/
+    form>div
+    {
+        display: inline;
+    }
+    
+    /*The style of the input*/
+    input
+    {
+        width: 49%;
+        padding-right: 1%;
+    }
+    
+    /*The style of the list elements*/
+    footer li
+    {
+        display: inline;
+        padding: 0 10px;
+    }
+    
+    /*The style of the middle list in the footer*/
+    .mid
+    {
+        border-right: 0.5px dotted #585858;
+        border-left: 0.5px dotted #585858;
+    }
+    /*End of footer style*/
+}
+/*End of "600px" width*/
+
+/*The style of the body with width between "768px" and "992px"*/
+@media(min-width:768px)
+{
+    /*The style of the overlay div which appears over the image */
+    .text
+    {
+        width: 88%;
+        left: 6%;
+    }
+    
+    /*The style of the social media div*/
+    #social
+    {
+        margin-left: 50px;
+    }
+}
+/*End of "768px" width*/
+
+/*The style of the body with minimum width "992px"*/
+@media(min-width:992px)
+{
+    /*Header style*/
+    header
+    {
+        padding: 150px 200px 0 200px;
+    }
+    
+    /*the style of h1 heading*/
+    h1
+    {
+        font-size: 50px;
+    }
+    
+    /*The style of the overlay div which appears over the image */
+    .text
+    {
+        width: 92%;
+        left: 4%;
+    }
+}
+/*End of "992px" width*/
